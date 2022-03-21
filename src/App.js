@@ -29,17 +29,16 @@ function App() {
     getData()
   }, [])
 
-  
 
-  
 
-  function showScore(){
+
+
+  function showScore() {
     setFinish(true)
-    let score=0;
-    for(const i of quiz){
-      if(i.selectedAnswer === i.correctAnswer)
-      {
-        score=score+1
+    let score = 0;
+    for (const i of quiz) {
+      if (i.selectedAnswer === i.correctAnswer) {
+        score = score + 1
       }
     }
     console.log(`${score}`)
@@ -61,8 +60,8 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar/>
-      
+      <Navbar />
+
       {
         start ? <Quiz
           quiz={quiz}

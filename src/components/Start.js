@@ -3,7 +3,7 @@ import React from 'react'
 const Start = ({ props }) => {
     const StartQuiz = () => props(true)
     return (
-        <div>
+        <div className='start-page'>
             <h1 className='Heading'>
                 Take the Quiz!!
             </h1>

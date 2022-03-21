@@ -8,8 +8,8 @@ const Quiz = (props) => {
     //function handleClick()
 
     let styles = {
-        backgroundColor: '#3e8e41' 
-        
+        backgroundColor: '#3e8e41'
+
     }
 
     return (
@@ -28,7 +28,7 @@ const Quiz = (props) => {
                                 }
                                 )}
                         </div>
-                         <hr></hr>
+                        <hr></hr>
                     </>
                 )
             }
@@ -38,7 +38,7 @@ const Quiz = (props) => {
 
             {
                 props.finish ? <>
-                <p className='quiz-result'>{props.result} </p> <button className='quiz-PlayAgain' onClick={()=> window.location.reload()}>Play Again</button> </>:
+                    <p className='quiz-result'>{props.result} </p> <button className='quiz-PlayAgain' onClick={() => window.location.reload()}>Play Again</button> </> :
                     <button className='quiz-check' onClick={props.showScore}> Check answers</button>
             }
 
